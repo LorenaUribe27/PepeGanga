@@ -1,0 +1,177 @@
+{
+  "flex-layout.row#tabsHomeShelfs": {
+    "children": ["tab-layout#shelfs-home"],
+    "props": {
+      "blockClass": "shelf-tabs-container"
+    }
+  },
+  "tab-layout#shelfs-home": {
+    "children": ["tab-list#home", "tab-content#home"],
+    "props": {
+      "blockClass": "shelf-tabs-home",
+      "defaultActiveTabId": "shelfHome1"
+    }
+  },
+  
+  "tab-list#home": {
+    "children": [
+      "slider-layout#tabs"
+    ]
+  },
+  "slider-layout#tabs": {
+    "children": [
+      "tab-list.item#shelfHome1",
+      "tab-list.item#shelfHome2",
+      "tab-list.item#shelfHome3",
+      "tab-list.item#shelfHome4"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 10,
+        "tablet": 1,
+        "phone": 2
+      },
+      "infinite": false,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots":"never",
+      "blockClass": "tabs-main",
+      "autoplay": {
+        "timeout": 10000,
+        "stopOnHover": true
+      }
+    }
+  },
+  "tab-list.item#shelfHome1": {
+    "props": {
+      "tabId": "shelfHome1",
+      "label": "Cocina",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#shelfHome2": {
+    "props": {
+      "tabId": "shelfHome2",
+      "label": "Aseo y limpieza"
+    }
+  },
+  "tab-list.item#shelfHome3": {
+    "props": {
+      "tabId": "shelfHome3",
+      "label": "Electromenores"
+    }
+  },
+  "tab-list.item#shelfHome4": {
+    "props": {
+      "tabId": "shelfHome4",
+      "label": "Decoración"
+    }
+  },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#tabshelfhome1",
+      "tab-content.item#tabshelfhome2",
+      "tab-content.item#tabshelfhome3",
+      "tab-content.item#tabshelfhome4"
+    ]
+  },
+  "tab-content.item#tabshelfhome1": {
+    "children": ["list-context.product-list#shelve-tab-1"],
+    "props": {
+      "tabId": "shelfHome1"
+    }
+  },
+  "list-context.product-list#shelve-tab-1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelve-tab-1"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelve-tab-1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf--container"
+    }
+  },
+  "tab-content.item#tabshelfhome2": {
+    "children": ["list-context.product-list#shelve-tab-2"],
+    "props": {
+      "tabId": "shelfHome2"
+    }
+  },
+  "list-context.product-list#shelve-tab-2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelve-tab-2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelve-tab-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf--container"
+    }
+  },
+  "tab-content.item#tabshelfhome3": {
+    "children": ["list-context.product-list#shelve-tab-3"],
+    "props": {
+      "tabId": "shelfHome3"
+    }
+  },
+  "list-context.product-list#shelve-tab-3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelve-tab-3"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelve-tab-3": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf--container"
+    }
+  },
+  "tab-content.item#tabshelfhome4": {
+    "children": ["list-context.product-list#shelve-tab-4"],
+    "props": {
+      "tabId": "shelfHome4"
+    }
+  },
+  "list-context.product-list#shelve-tab-4": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelve-tab-4"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelve-tab-4": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf--container"
+    }
+  }
+}

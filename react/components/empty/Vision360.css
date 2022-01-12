@@ -1,0 +1,23 @@
+.vision {
+    border: none;
+}
+.vtex-my-account-1-x-menuLinks .flex {
+    display: flex;
+    flex-direction: column;
+}
+.vtex-my-account-1-x-menuLinks .flex div:nth-child(5) {
+    order: 1;
+}
+.vtex-my-account-1-x-menuLinks .flex div:nth-child(1) {
+    display:none;
+}
+.vtex-my-account-1-x-menuLinks .flex div:nth-child(2) {
+    order: 2;
+    display: none;
+}
+.vtex-my-account-1-x-menuLinks .flex div:nth-child(3) {
+    order: 3;
+}
+.vtex-my-account-1-x-menuLinks .flex div:nth-child(4) {
+    order: 4;
+}

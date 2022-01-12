@@ -1,0 +1,187 @@
+{
+  "store.home": {
+    "blocks": [
+      "rich-text#title-shelve-1",
+      "flex-layout.row#shelf-1",
+
+      "rich-text#title-shelve-2",
+      "flex-layout.row#shelf-2",
+
+
+      "rich-text#title-shelve-tabs",
+      "flex-layout.row#tabsHomeShelfs",
+
+      "rich-text#title-brands",
+      "flex-layout.row#bannersMarca"
+    ]
+  },
+ 
+  "rich-text#title-shelve-1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Súper descuentos",
+      "textColor": "black-50",
+      "blockClass": "block-title-p1"
+    }
+  },
+  "flex-layout.row#shelf-1": {
+    "children": ["list-context.product-list#shelve-1"],
+    "props": {
+      "blockClass": "shelf--container"
+    }
+  },
+  "list-context.product-list#shelve-1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelve-products-1"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelve-products-1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf--container"
+    }
+  },
+  "rich-text#title-shelve-2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Ofertas destacadas",
+      "textColor": "black-50",
+      "blockClass": "block-title-p1"
+    }
+  },
+  "flex-layout.row#shelf-2": {
+    "children": ["list-context.product-list#shelve-2"],
+    "props": {
+      "blockClass": "shelf--container"
+    }
+  },
+  "list-context.product-list#shelve-2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelve-products-2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelve-products-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf--container"
+    }
+  },
+  "rich-text#title-shelve-tabs": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Lo mejor para el hogar",
+      "textColor": "black-50",
+      "blockClass": "block-title-p1"
+    }
+  },
+
+  "rich-text#title-brands": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Compra por marca",
+      "textColor": "black-50",
+      "blockClass": "block-title-p1"
+    }
+  },
+  "flex-layout.row#bannersMarca": {
+    "props": {
+      "blockClass": "banners-brands-home"
+    },
+    "children": ["list-context.image-list#brandSecHome"]
+  },
+  "list-context.image-list#brandSecHome": {
+    "children": ["slider-layout#brandSecHome"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/images/logo-marca-1.jpg",
+          "mobileImage": "assets/images/logo-marca-1.jpg",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/logo-marca-2.jpg",
+          "mobileImage": "assets/images/logo-marca-2.jpg",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/logo-marca-3.jpg",
+          "mobileImage": "assets/images/logo-marca-3.jpg",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/logo-marca-4.png",
+          "mobileImage": "assets/images/logo-marca-4.png",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/logo-marca-5.png",
+          "mobileImage": "assets/images/logo-marca-5.png",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/logo-marca-6.png",
+          "mobileImage": "assets/images/logo-marca-6.png",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/images/logo-marca-1.jpg",
+          "mobileImage": "assets/images/logo-marca-1.jpg",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#brandSecHome": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 2
+      },
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "slider-home-brands"
+    }
+  }
+ 
+}
